@@ -15,7 +15,7 @@ A Kali Linux 2026.3 virtual machine running in VirtualBox 7.2.22. It lives on a 
  Subnet - 10.0.0.0/24 
  Kali IP - 10.0.0.2 
  Gateway - 10.0.0.1 
- DNS | 8.8.8.8 
+ DNS - 8.8.8.8 
 
 Later I plan to add Windows and Android machines on the same subnet as practice targets.
 
@@ -50,7 +50,7 @@ IP address/Ping test](screenshot-ip-ping.png)
 ## Problems I ran into
 
 - Installer ended early.I restarted my PC and ran it again
-- Defender deleted the Kali download. It flagged it as a Trojan, which is a known false positive for Kali because of the security tools inside. I confirmed the official source, excluded my C:\Kali folder and downloaded again.
+- Defender deleted the Kali download. It flagged it as a Trojan, which is a known false positive for Kali because of the security tools inside. I confirmed the official source by checking the SHA256 sum, excluded my C:\Kali folder and downloaded again.
 - Ping gave invalid argument. I forgot the number after -c.
 
 ## What I learned
